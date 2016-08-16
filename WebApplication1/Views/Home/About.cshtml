@@ -1,0 +1,16 @@
+﻿@model WebApplication1.Models.ViewModel
+
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+@using (Html.BeginForm())
+{ 
+    <p>Sample DropDownList using ViewModel:</p>
+    @Html.DropDownList("Programs")
+}
+
